@@ -24,3 +24,20 @@ int main(void) {
   }
 }
 
+float wallis_pi(int i){
+	float pi_by_two =1;
+	float pi;
+	float form;
+	float num;
+	float den;
+	
+	for(int j=1;j<=i;j++){
+		num = 4*j*j;
+		den = 4*j*j -1;
+		form = num/den;
+		pi_by_two = pi_by_two * form;
+	}
+	pi = 2 * pi_by_two;
+	return pi;
+	
+}
