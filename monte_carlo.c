@@ -41,9 +41,7 @@ int main(void) {
 
 
 float mc_pi(int j){
-	
 	float count =0;
-
 	for(int i=1; i<=j;i++){
 		float x = frandom();
 		float y = frandom();
@@ -52,7 +50,6 @@ float mc_pi(int j){
 		if(dist<1){
 			count = count+1;
 		}
-		
 	}
 
 	float pi = (4*count)/j;
